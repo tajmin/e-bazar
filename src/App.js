@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation";
 import Home from "./pages/home/Home";
 import SignIn from "./pages/Sign-in/SignIn";
+import SignUp from "./pages/Sign-up/SignUp";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="sign-in" element={<SignIn />} />
       </Route>
+      <Route path="/sign-up" element={<SignUp />} />
     </Routes>
   );
 };
