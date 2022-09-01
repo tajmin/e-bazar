@@ -1,6 +1,6 @@
 import React from "react";
 import SignUpForm from "../../components/sign-up-form/SignUpForm";
-import "./Sign-up.styles.scss";
+import "./SignUp.styles.scss";
 
 const SignUp = () => {
   return (

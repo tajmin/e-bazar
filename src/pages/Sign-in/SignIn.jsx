@@ -1,20 +1,24 @@
 import React from "react";
-import {
-  createUserDocFromAuth,
-  googleSignInWithPopup,
-} from "../../Utility/Firebase/Firebase";
+import SignInForm from "../../components/sign-in-form/SignInForm";
+import "./SignIn.styles.scss";
 
 const SignIn = () => {
-  const signInGoogleUser = async () => {
-    const { user } = await googleSignInWithPopup();
-    const userDocRef = await createUserDocFromAuth(user);
-  };
-
   return (
-    <div>
-      <h1>This is sign in</h1>
-      <button onClick={signInGoogleUser}>Sign in With Google</button>
-    </div>
+    <>
+      <div className="container">
+        <div className="form-container">
+          <div className="form">
+            <SignInForm></SignInForm>
+          </div>
+        </div>
+        <div className="img-glass-container">
+          <div className="glass">
+            <h2>Already have an account?</h2>
+            <span>Sign in now and get the best shopping experience!</span>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
