@@ -19,8 +19,7 @@ const SignInForm = () => {
   const { email, password } = formFields;
 
   const signInGoogleUser = async () => {
-    const { user } = await googleSignInWithPopup();
-    await createUserDocFromAuth(user);
+    await googleSignInWithPopup();
   };
 
   const handleFormChange = (event) => {
@@ -32,7 +31,7 @@ const SignInForm = () => {
     event.preventDefault();
 
     try {
-      const response = await emailSignIn(email, password);
+      await emailSignIn(email, password);
       setFormFields(formData);
     } catch (error) {
       switch (error.code) {
@@ -50,7 +49,7 @@ const SignInForm = () => {
 
   return (
     <>
-      <span>Sign In with email </span>
+      <span>Sign in with email </span>
       <form onSubmit={handleFormSubmit}>
         <FormComponents
           label="Your Email"
