@@ -1,5 +1,6 @@
 import React, { Fragment, useContext } from "react";
 import { Link, Outlet } from "react-router-dom";
+import { CartContext } from "../../contexts/cart.context";
 import { UserContext } from "../../contexts/user.context";
 import logo from "../../images/logo.png";
 import { userSignOut } from "../../Utility/Firebase/Firebase";
@@ -9,7 +10,7 @@ import "./Navigation.styles.scss";
 
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
-
+  const { isCartDropdownOpen } = useContext(CartContext);
   return (
     <Fragment>
       <nav>
@@ -40,7 +41,7 @@ const Navigation = () => {
           )}
           <CartIcon></CartIcon>
         </div>
-        <CartDropdown></CartDropdown>
+        {isCartDropdownOpen && <CartDropdown></CartDropdown>}
       </nav>
       <Outlet></Outlet>
     </Fragment>
