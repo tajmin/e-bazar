@@ -8,6 +8,7 @@ import {
 
 import Button from "../Button/Button";
 import FormComponents from "../Form-components/FormComponents";
+import GoogleIcon from "../Google-icon/GoogleIcon";
 
 const formData = {
   email: "",
@@ -79,6 +80,7 @@ const SignInForm = () => {
         >
           <Button type="submit">Sign in</Button>
           <Button type="button" buttonType="google" onClick={signInGoogleUser}>
+            <GoogleIcon></GoogleIcon>
             Google Sign In
           </Button>
         </div>

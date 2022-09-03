@@ -26,6 +26,8 @@
     min-width: 230px;
     background-color: #4285f4;
     color: white;
+    justify-content: space-around;
+    align-items: center;
 
     &:hover {
       background-color: #155dd1;
@@ -35,11 +37,10 @@
 
   &.inverted {
     background-color: white;
-    color: black;
-    border: 1px solid black;
+    color: #4dba3c;
 
     &:hover {
-      background-color: black;
+      background-color: #4dba3c;
       color: white;
       border: none;
     }

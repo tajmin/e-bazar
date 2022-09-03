@@ -3,6 +3,8 @@ import { Link, Outlet } from "react-router-dom";
 import { UserContext } from "../../contexts/user.context";
 import logo from "../../images/logo.png";
 import { userSignOut } from "../../Utility/Firebase/Firebase";
+import CartDropdown from "../Cart-dropdown/CartDropdown";
+import CartIcon from "../Cart-icon/CartIcon";
 import "./Navigation.styles.scss";
 
 const Navigation = () => {
@@ -18,6 +20,10 @@ const Navigation = () => {
           <Link to="/" className="menu-item">
             Home
           </Link>
+          <Link to="/shop" className="menu-item">
+            Shop
+          </Link>
+
           {currentUser ? (
             <span className="menu-item" onClick={userSignOut}>
               Sign Out
@@ -32,7 +38,9 @@ const Navigation = () => {
               </Link>
             </>
           )}
+          <CartIcon></CartIcon>
         </div>
+        <CartDropdown></CartDropdown>
       </nav>
       <Outlet></Outlet>
     </Fragment>
