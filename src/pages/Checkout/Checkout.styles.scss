@@ -1,31 +1,85 @@
 .checkout-container {
-  width: 55%;
-  min-height: 90vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 50px auto 0;
+  background: linear-gradient(to top left, #d1e6ed, #4dba3cbb);
+  padding: 5rem;
+  margin: 0;
+  min-height: 85vh;
 
-  .checkout-header {
-    width: 100%;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid darkgrey;
+  .order-summary-text {
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    width: 50%;
 
-    .header-block {
-      text-transform: capitalize;
-      width: 23%;
+    h2 {
+      font-size: 2rem;
+      margin: 0;
+      letter-spacing: 2px;
+      word-spacing: 10px;
+      text-transform: uppercase;
+    }
 
-      &:last-child {
-        width: 8%;
-      }
+    h4 {
+      margin: 0;
+      line-height: 2.25rem;
+      font-weight: normal;
+      font-size: 1.2rem;
+    }
+
+    span {
+      padding: 0 0.25rem;
+      font-weight: 700;
+      color: darkgoldenrod;
+    }
+
+    .separator {
+      margin: 0.75rem auto;
     }
   }
 
-  .total {
-    margin-top: 30px;
-    margin-left: auto;
-    font-size: 36px;
+  .order-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    padding: 2.5rem;
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 0.5rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+
+    .checkout-header {
+      width: 100%;
+      padding: 5px 0;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #fff;
+
+      .header-block {
+        text-transform: capitalize;
+        width: 23%;
+
+        &:last-child {
+          width: 8%;
+        }
+      }
+    }
+
+    .total {
+      margin-top: 30px;
+      margin-left: auto;
+      font-size: 36px;
+      color: #4dba3c;
+    }
   }
 }
