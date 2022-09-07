@@ -14,8 +14,8 @@ const CategoryPreview = ({ title, products }) => {
             <ProductCard key={product.id} product={product}></ProductCard>
           ))}
       </div>
-      <div>
-        <Link to="/">More {title.toUpperCase()}</Link>
+      <div className="link">
+        <Link to={title}>More {title.toUpperCase()}</Link>
       </div>
     </div>
   );

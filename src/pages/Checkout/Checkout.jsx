@@ -18,24 +18,6 @@ const Checkout = () => {
         <div className="separator"></div>
       </div>
       <div className="order-container">
-        {/* <div className="checkout-header">
-          <div className="header-block">
-            <h4>Producs</h4>
-          </div>
-          <div className="header-block">
-            <h4>Description</h4>
-          </div>
-          <div className="header-block">
-            <h4>Quantity</h4>
-          </div>
-          <div className="header-block">
-            <h4>Price</h4>
-          </div>
-          <div className="header-block">
-            <h4>Remove</h4>
-          </div>
-        </div> */}
-
         {cartProducts.map((item) => (
           <CheckoutItem key={item.id} cartItem={item}></CheckoutItem>
         ))}
