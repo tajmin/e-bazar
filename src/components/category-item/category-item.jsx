@@ -1,11 +1,11 @@
 import React from "react";
-import "./category-item.styles.scss";
+import { CategoryContainer } from "./category-item.styles";
 
 const CategoryItem = ({ category }) => {
   const { imageUrl, title } = category;
 
   return (
-    <div className="category-container">
+    <CategoryContainer>
       <div
         className="background-image"
         style={{
@@ -16,7 +16,7 @@ const CategoryItem = ({ category }) => {
         <h2>{title}</h2>
         <p>shop now</p>
       </div>
-    </div>
+    </CategoryContainer>
   );
 };
 

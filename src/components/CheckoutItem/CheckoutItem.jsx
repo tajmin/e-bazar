@@ -3,7 +3,14 @@ import { CartContext } from "../../contexts/cart.context";
 import DeleteIcon from "../Delete-icon/DeleteIcon";
 import MinusIcon from "../Minus-icon/MinusIcon";
 import PlusIcon from "../Plus-icon/PlusIcon";
-import "./CheckoutItem.styles.scss";
+import {
+  CheckoutItemContainer,
+  Image,
+  ImageContainer,
+  OperatorContainer,
+  QuantityContainer,
+  RemoveIconContainer,
+} from "./CheckoutItem.styles";
 
 const CheckoutItem = ({ cartItem }) => {
   const { name, imageUrl, price, quantity } = cartItem;
@@ -18,25 +25,29 @@ const CheckoutItem = ({ cartItem }) => {
   const handleDecrement = () => decreaseProductQuantityFromCart(cartItem);
 
   return (
-    <div className="checkout-item-container">
-      <div className="image-container">
-        <img src={imageUrl} alt={`${name}`} />
-      </div>
+    <CheckoutItemContainer>
+      <ImageContainer>
+        <Image src={imageUrl} alt={`${name}`} />
+      </ImageContainer>
+
       <span className="name">{name}</span>
-      <div className="quantity">
-        <div className="arrow" onClick={handleDecrement}>
+
+      <QuantityContainer>
+        <OperatorContainer onClick={handleDecrement}>
           <MinusIcon></MinusIcon>
-        </div>
-        <span className="value">{quantity}</span>
-        <div className="arrow" onClick={handleIncrement}>
+        </OperatorContainer>
+        <span>{quantity}</span>
+        <OperatorContainer onClick={handleIncrement}>
           <PlusIcon></PlusIcon>
-        </div>
-      </div>
+        </OperatorContainer>
+      </QuantityContainer>
+
       <span className="price">${price}</span>
-      <div className="remove-button" onClick={handleRemoveItem}>
+
+      <RemoveIconContainer onClick={handleRemoveItem}>
         <DeleteIcon></DeleteIcon>
-      </div>
-    </div>
+      </RemoveIconContainer>
+    </CheckoutItemContainer>
   );
 };
 

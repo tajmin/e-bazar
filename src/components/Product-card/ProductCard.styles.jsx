@@ -1,4 +1,6 @@
-.product-card {
+import styled from "styled-components";
+
+export const ProductCardContainer = styled.div`
   width: 100%;
   padding: 1.5rem;
   display: flex;
@@ -11,18 +13,18 @@
     0 5px 10px 0 rgba(222, 222, 222, 0.15);
   transition: box-shadow 0.3s;
 
-  img {
-    width: 100%;
-    height: 90%;
-    object-fit: cover;
-    margin-bottom: 5px;
-  }
-
   button {
     width: 70%;
     position: absolute;
     top: 370px;
     display: none;
+  }
+
+  img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    margin-bottom: 5px;
   }
 
   &:hover {
@@ -35,19 +37,19 @@
       display: flex;
     }
   }
+`;
 
-  .footer {
-    width: 100%;
-    height: 5%;
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
+export const ProductInfoContainer = styled.div`
+  width: 100%;
+  height: 5%;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
 
-    h4 {
-      margin: 2px 0 5px 0;
-    }
-    .price {
-      color: #4dba3c;
-    }
+  h4 {
+    margin: 2px 0 5px 0;
   }
-}
+  .price {
+    color: #4dba3c;
+  }
+`;
