@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
-  createUserDocFromAuth,
   emailSignIn,
   googleSignInWithPopup,
 } from "../../Utility/Firebase/Firebase";
 
-import Button from "../Button/Button";
+import Button, { BUTTON_CLASSES } from "../Button/Button";
 import FormComponents from "../Form-components/FormComponents";
 import GoogleIcon from "../Google-icon/GoogleIcon";
 
@@ -79,7 +78,11 @@ const SignInForm = () => {
           }}
         >
           <Button type="submit">Sign in</Button>
-          <Button type="button" buttonType="google" onClick={signInGoogleUser}>
+          <Button
+            type="button"
+            buttonType={BUTTON_CLASSES.google}
+            onClick={signInGoogleUser}
+          >
             <GoogleIcon></GoogleIcon>
             Google Sign In
           </Button>
