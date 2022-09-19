@@ -30,7 +30,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const firebaseApp = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 
 const googleProvider = new GoogleAuthProvider();
 googleProvider.setCustomParameters({
@@ -61,13 +61,7 @@ export const getCategoriesAndDocuments = async () => {
   const queryObject = query(collectionRef);
   const querSnapShot = await getDocs(queryObject);
 
-  const categoryList = querSnapShot.docs.reduce((accumulator, document) => {
-    const { title, items } = document.data();
-    accumulator[title.toLowerCase()] = items;
-    return accumulator;
-  }, {});
-
-  return categoryList;
+  return querSnapShot.docs.map((docSnapshot) => docSnapshot.data());
 };
 
 export const createUserDocFromAuth = async (userAuth, extraInfo = {}) => {
