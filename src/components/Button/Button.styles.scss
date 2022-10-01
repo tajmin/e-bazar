@@ -15,6 +15,7 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
+  align-items: center;
   transition: 300ms ease all;
 
   &:hover {
@@ -43,6 +44,17 @@
       background-color: #4dba3c;
       color: white;
       border: none;
+    }
+  }
+
+  &.payment {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+
+    &:hover {
+      background-color: white;
+      color: black;
     }
   }
 }
