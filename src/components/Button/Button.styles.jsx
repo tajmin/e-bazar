@@ -17,6 +17,7 @@ export const BaseButton = styled.button`
   cursor: pointer;
   display: flex;
   justify-content: center;
+  align-items: center;
   transition: 300ms ease all;
 
   &:hover {
@@ -47,5 +48,16 @@ export const InvertedButton = styled(BaseButton)`
     background-color: #4dba3c;
     color: white;
     border: none;
+  }
+`;
+
+export const PaymentButton = styled(BaseButton)`
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+
+  &:hover {
+    background-color: white;
+    color: black;
   }
 `;

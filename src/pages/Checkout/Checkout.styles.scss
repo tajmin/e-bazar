@@ -48,15 +48,6 @@
     justify-content: center;
     margin: 2rem 0;
     padding: 2.5rem;
-    background: white;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.3)
-    );
-    border-radius: 0.5rem;
-    z-index: 2;
-    backdrop-filter: blur(2rem);
 
     .checkout-header {
       width: 100%;

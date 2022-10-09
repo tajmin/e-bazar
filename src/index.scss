@@ -19,3 +19,15 @@ a {
   text-decoration: none;
   color: #000;
 }
+
+.glass-morph {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 0.5rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+}

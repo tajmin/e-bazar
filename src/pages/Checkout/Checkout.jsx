@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import CheckoutItem from "../../components/CheckoutItem/CheckoutItem";
+import PaymentForm from "../../components/Payment-Form/PaymentForm";
 import { CartContext } from "../../contexts/cart.context";
 import "./Checkout.styles.scss";
 
@@ -17,12 +18,13 @@ const Checkout = () => {
         </h4>
         <div className="separator"></div>
       </div>
-      <div className="order-container">
+      <div className="order-container glass-morph">
         {cartProducts.map((item) => (
           <CheckoutItem key={item.id} cartItem={item}></CheckoutItem>
         ))}
         <span className="total">Total: ${cartTotalPrice}</span>
       </div>
+      <PaymentForm></PaymentForm>
     </div>
   );
 };
