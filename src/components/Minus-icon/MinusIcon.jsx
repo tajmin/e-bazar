@@ -1,11 +1,10 @@
 import React from "react";
-import { ReactComponent as MinusSign } from "../../images/negative-icon.svg";
-import "./MinusIcon.styles.scss";
+import { Minus } from "./MinusIcon.styles";
 
 const MinusIcon = () => {
   return (
     <>
-      <MinusSign className="minus-icon"></MinusSign>
+      <Minus></Minus>
     </>
   );
 };

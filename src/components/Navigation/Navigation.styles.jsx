@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const NavContainer = styled.div`
+  padding: 0 5rem;
   height: 10vh;
   width: 100%;
   display: flex;

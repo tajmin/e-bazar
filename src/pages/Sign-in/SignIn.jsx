@@ -1,23 +1,31 @@
 import React from "react";
+import {
+  FormContainer,
+  FormWrapper,
+  GlassMorphContainer,
+  GlassMorphWrapper,
+  SignInContainer,
+} from "../../AuthPages.styles";
 import SignInForm from "../../components/sign-in-form/SignInForm";
-import "./SignIn.styles.scss";
+import logo from "../../images/logo.png";
 
 const SignIn = () => {
   return (
     <>
-      <div className="container">
-        <div className="form-container">
-          <div className="form">
+      <SignInContainer>
+        <FormWrapper>
+          <FormContainer>
             <SignInForm></SignInForm>
-          </div>
-        </div>
-        <div className="img-glass-container">
-          <div className="glass">
+          </FormContainer>
+        </FormWrapper>
+        <GlassMorphWrapper>
+          <GlassMorphContainer>
+            <img src={logo} alt="e-bazr" />
             <h2>Already have an account?</h2>
             <span>Sign in now and get the best shopping experience!</span>
-          </div>
-        </div>
-      </div>
+          </GlassMorphContainer>
+        </GlassMorphWrapper>
+      </SignInContainer>
     </>
   );
 };

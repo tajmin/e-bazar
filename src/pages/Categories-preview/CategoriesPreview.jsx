@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import CategoryPreview from "../../components/Category-preview/CategoryPreview";
 import { CategoriesContext } from "../../contexts/categories.context";
-import "./CategoriesPreview.styles.scss";
+import { Container } from "../../Global.styles";
 
 const CategoriesPreview = () => {
   const { categories } = useContext(CategoriesContext);
 
   return (
-    <div className="categories-preview-wrapper">
+    <Container>
       {Object.keys(categories).map((title) => {
         const products = categories[title];
         return (
@@ -18,7 +18,7 @@ const CategoriesPreview = () => {
           ></CategoryPreview>
         );
       })}
-    </div>
+    </Container>
   );
 };
 

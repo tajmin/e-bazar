@@ -2,7 +2,12 @@ import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ProductCard from "../../components/Product-card/ProductCard";
 import { CategoriesContext } from "../../contexts/categories.context";
-import "./Category.styles.scss";
+import { Container } from "../../Global.styles";
+import {
+  CategoryTitle,
+  ProductContainer,
+  TitleBorder,
+} from "./Category.styles";
 
 const Category = () => {
   const { categoryTitle } = useParams();
@@ -14,15 +19,16 @@ const Category = () => {
   }, [categoryTitle, categories]);
 
   return (
-    <div className="category">
-      <h2>{categoryTitle}</h2>
-      <div className="title-border"></div>
-      <div className="product-container">
+    <Container>
+      <CategoryTitle>{categoryTitle}</CategoryTitle>
+      <TitleBorder></TitleBorder>
+
+      <ProductContainer>
         {products?.map((product) => (
           <ProductCard key={product.id} product={product}></ProductCard>
         ))}
-      </div>
-    </div>
+      </ProductContainer>
+    </Container>
   );
 };
 

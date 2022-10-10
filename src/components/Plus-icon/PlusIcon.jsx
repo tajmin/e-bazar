@@ -1,11 +1,10 @@
 import React from "react";
-import { ReactComponent as PlusSign } from "../../images/plus-icon.svg";
-import "./PlusIcon.styles.scss";
+import { Plus } from "./PlusIcon.styles.jsx";
 
 const PlusIcon = () => {
   return (
     <>
-      <PlusSign className="plus-icon"></PlusSign>
+      <Plus></Plus>
     </>
   );
 };
