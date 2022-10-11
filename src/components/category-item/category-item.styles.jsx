@@ -44,7 +44,6 @@ export const CategoryContainer = styled.div`
   align-items: center;
   justify-content: center;
   border: 1px solid #ccc;
-  margin: 0 7.5px 15px;
   overflow: hidden;
 
   &:hover {

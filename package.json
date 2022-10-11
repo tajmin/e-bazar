@@ -17,6 +17,7 @@
     "sass": "^1.54.5",
     "stripe": "^10.13.0",
     "styled-components": "^5.3.5",
+    "swiper": "^8.4.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
