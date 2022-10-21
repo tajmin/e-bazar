@@ -19,19 +19,26 @@
 
   <ol>
     <li>
-      <a href="#clipboard-about">About</a>
+      <a href="#1-about">About</a>
     </li>
     <li>
-      <a href="#toolbox-tech-stack">Tech Stack</a>
+      <a href="#2-tech-stack">Tech Stack</a>
     </li>
     <li>
-      <a href="#hammer_and_wrench-getting-started">Getting Started</a>
+      <a href="#3-getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">3.1 Prerequisites</a></li>
-        <li><a href="#installation">3.2 Installation</a></li>
+        <li><a href="#31-prerequisites">3.1 Prerequisites</a></li>
+        <li><a href="#32-installation">3.2 Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li>
+      <a href="#4-branches-explained">Branches Explained</a>
+       <ul>
+        <li><a href="#41-main">4.1 main</a></li>
+        <li><a href="#42-v2-styled-components">4.2 V2-Styled-Components</a></li>
+         <li><a href="43-v3-reducers">4.3 V3-Reducers</a></li>
+      </ul>
+    </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -41,13 +48,13 @@
 
 <br />
 
-## :clipboard: About
+## 1. About
 
 ![Product Name Screen Shot](https://i.ibb.co/mGVphpL/hero.jpg)
 
 <p align="right"><a href="#readme-top">Back to Top :arrow_heading_up:</a></p>
 
-## :toolbox: Tech Stack
+## 2. Tech Stack
 
 [![Package - react](https://img.shields.io/github/package-json/dependency-version/tajmin/e-bazar/react?style=for-the-badge&logo=react&logoColor=%2361dafb&color=%23000)](https://www.npmjs.com/package/react)
 [![Package - react-router-dom](https://img.shields.io/github/package-json/dependency-version/tajmin/e-bazar/react-router-dom?style=for-the-badge&logo=react-router&logoColor=%23fff&color=%23F44250)](https://www.npmjs.com/package/react-router-dom)
@@ -65,16 +72,16 @@
 
 <p align="right"><a href="#readme-top">Back to Top :arrow_heading_up:</a></p>
 
-## :hammer_and_wrench: Getting Started
+## 3. Getting Started
 
 Getting started with e-bazr is fairly easy and simple. Follow the instructions as stated below -
 
-### Prerequisites
+### 3.1 Prerequisites
 
 - You need to have `Node.js` installed on your computer beforehand to run this project. Follow [this link](https://nodejs.org/en/download/) to install `Node.js` on your computer.
 - To test `Stripe` payment and simulate the credit-card transaction, you need to run the project on `Netlify CLI`. To install `Netlify CLI`, [click here](https://docs.netlify.com/cli/get-started/). Also, you need to have your own `stripe` secret keys that you need to store on a `.env` file locally.
 
-### Installation
+### 3.2 Installation
 
 To test `Stripe` payment and simulate the credit-card transaction, skip step 3.
 
@@ -109,3 +116,24 @@ To test `Stripe` payment and simulate the credit-card transaction, skip step 3.
    ```
 
  <p align="right"><a href="#readme-top">Back to Top :arrow_heading_up:</a></p>
+ 
+ ## 4. Branches Explained
+ 
+ There are currently [6 branches](https://github.com/tajmin/e-bazar/branches) in the repository. These are: <br />
+  1.  `main` 
+  2.  `V2-Styled-Components`
+  3.  `V3-Reducers`
+  4.  `V4-Redux`
+  5.  `V5-Redux-Thunk`
+  6.  `V6-Redux-Saga`
+  
+  While the core features and functionality of the project remain the same for each branch, the architechture differs from each other. Each branch is built on different philosophies, and hence uses different packages. In the following few paragraphs, this is explained briefly -
+  
+  ### 4.1 `main`
+  The `main` branch incorporates the `React` `Context API`. Everything from `authentication` to `cart` functionality is implemented by the extensive use of `context`. For styling, the `SASS` preprocessor scripting language is used.
+  
+  ### 4.2 `V2-Styled-Components`
+  This branch incoprates everything from the `main` branch except the styling principle. Instead, this leverages the idea of `Styled Components`.
+  
+  ### 4.3 `V3-Reducers`
+  The `V3-Reducers` branch leverages from the `useReducer` hook of `React.js`, which can be evident in `userContext`, `cartContex`, and `categoriesContext`.
