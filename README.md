@@ -37,13 +37,13 @@
         <li><a href="#41-main">4.1 main</a></li>
         <li><a href="#42-v2-styled-components">4.2 V2-Styled-Components</a></li>
          <li><a href="43-v3-reducers">4.3 V3-Reducers</a></li>
+         <li><a href="44-v4-redux">4.4 V4-Redux</a></li>
+         <li><a href="45-v5-redux-thunk">4.5 V5-Redux-Thunk</a></li>
+         <li><a href="46-v6-redux">4.6 V6-Redux-Saga</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#Future-updates">Future Updates </a></li>
   </ol>
 
 <br />
@@ -137,3 +137,12 @@ To test `Stripe` payment and simulate the credit-card transaction, skip step 3.
   
   ### 4.3 `V3-Reducers`
   The `V3-Reducers` branch leverages from the `useReducer` hook of `React.js`, which can be evident in `userContext`, `cartContex`, and `categoriesContext`.
+  
+  ### 4.4 `V4-Redux`
+  In this branch, the `Context API` is replaced with `redux` for state management. As a result, all core funcitonalities leverage from the `redux` philosophy of `store`, `root-reducer`, `selector` functions, and `action`s.
+  
+  ### 4.5 `V5-Redux-Thunk`
+  The `Redux Thunk` `middleware` is integrated and used to handle all of asynchronous behaviors of the project.
+  
+  ### 4.6 `V6-Redux-Saga`
+  As the branch name suggests, it uses `Redux Saga` middleware for asynchronous actions.
