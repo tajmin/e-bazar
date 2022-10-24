@@ -42,15 +42,15 @@
          <li><a href="46-v6-redux">4.6 V6-Redux-Saga</a></li>
       </ul>
     </li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#Future-updates">Future Updates </a></li>
+    <li><a href="#5-features">Features</a></li>
+    <li><a href="#6-future-updates">Future Updates</a></li>
   </ol>
 
 <br />
 
 ## 1. About
 
-![Product Name Screen Shot](https://i.ibb.co/mGVphpL/hero.jpg)
+![E-Bazr Screen Shot](https://i.ibb.co/mGVphpL/hero.jpg)
 
 <p align="right"><a href="#readme-top">Back to Top :arrow_heading_up:</a></p>
 
@@ -115,34 +115,64 @@ To test `Stripe` payment and simulate the credit-card transaction, skip step 3.
    netlify dev
    ```
 
- <p align="right"><a href="#readme-top">Back to Top :arrow_heading_up:</a></p>
+<p align="right"><a href="#readme-top">Back to Top :arrow_heading_up:</a></p>
  
- ## 4. Branches Explained
+## 4. Branches Explained
  
- There are currently [6 branches](https://github.com/tajmin/e-bazar/branches) in the repository. These are: <br />
-  1.  `main` 
-  2.  `V2-Styled-Components`
-  3.  `V3-Reducers`
-  4.  `V4-Redux`
-  5.  `V5-Redux-Thunk`
-  6.  `V6-Redux-Saga`
-  
-  While the core features and functionality of the project remain the same for each branch, the architechture differs from each other. Each branch is built on different philosophies, and hence uses different packages. In the following few paragraphs, this is explained briefly -
-  
-  ### 4.1 `main`
-  The `main` branch incorporates the `React` `Context API`. Everything from `authentication` to `cart` functionality is implemented by the extensive use of `context`. For styling, the `SASS` preprocessor scripting language is used.
-  
-  ### 4.2 `V2-Styled-Components`
-  This branch incoprates everything from the `main` branch except the styling principle. Instead, this leverages the idea of `Styled Components`.
-  
-  ### 4.3 `V3-Reducers`
-  The `V3-Reducers` branch leverages from the `useReducer` hook of `React.js`, which can be evident in `userContext`, `cartContex`, and `categoriesContext`.
-  
-  ### 4.4 `V4-Redux`
-  In this branch, the `Context API` is replaced with `redux` for state management. As a result, all core funcitonalities leverage from the `redux` philosophy of `store`, `root-reducer`, `selector` functions, and `action`s.
-  
-  ### 4.5 `V5-Redux-Thunk`
-  The `Redux Thunk` `middleware` is integrated and used to handle all of asynchronous behaviors of the project.
-  
-  ### 4.6 `V6-Redux-Saga`
-  As the branch name suggests, it uses `Redux Saga` middleware for asynchronous actions.
+There are currently [6 branches](https://github.com/tajmin/e-bazar/branches) in the repository. These are: <br />
+1.  `main` 
+2.  `V2-Styled-Components`
+3.  `V3-Reducers`
+4.  `V4-Redux`
+5.  `V5-Redux-Thunk`
+6.  `V6-Redux-Saga`
+
+While the core features and functionality of the project remain the same for each branch, the architechture differs from each other. Each branch is built on different philosophies, and hence uses different packages. In the following few paragraphs, this is explained briefly -
+
+### 4.1 `main`
+
+The `main` branch incorporates the `React` `Context API`. Everything from `authentication` to `cart` functionality is implemented by the extensive use of `context`. For styling, the `SASS` preprocessor scripting language is used.
+
+### 4.2 `V2-Styled-Components`
+
+This branch incoprates everything from the `main` branch except the styling principle. Instead, this leverages the idea of `Styled Components`.
+
+### 4.3 `V3-Reducers`
+
+The `V3-Reducers` branch leverages from the `useReducer` hook of `React.js`, which can be evident in `userContext`, `cartContex`, and `categoriesContext`.
+
+### 4.4 `V4-Redux`
+
+In this branch, the `Context API` is replaced with `redux` for state management. As a result, all core funcitonalities leverage from the `redux` philosophy of `store`, `root-reducer`, `selector` functions, and `action`s.
+
+### 4.5 `V5-Redux-Thunk`
+
+The `Redux Thunk` `middleware` is integrated and used to handle all of asynchronous behaviors of the project.
+
+### 4.6 `V6-Redux-Saga`
+
+As the branch name suggests, it uses `Redux Saga` middleware for asynchronous actions.
+
+<p align="right"><a href="#readme-top">Back to Top :arrow_heading_up:</a></p>
+
+## 5. Features
+
+- **_Authentication:_** `Google Sign-in` and `Email Sign-in` using `Firebase`.
+- **_Shop:_** A display of all `Categories` with each `Category` showing underneath a selection of products that belong to that respective `Category`. Also includes a page for each `Category` respectively, which displays products belonging to that `Category`. Products have `Add to Cart` opotion on both pages.
+- **_Cart:_** Displays a list of products added to the `Cart`.
+- **_Checkout:_** Shows a summary of the products to be purchased with the options to increase, decrease, and remove. Also facilitates the payment process for credit cards. Both signed-in users and guests can make purchase.
+
+<p align="right"><a href="#readme-top">Back to Top :arrow_heading_up:</a></p>
+
+## 6. Future Updates
+
+- **_Product Stock and Availability:_** Displays the available quantity of a product.
+- **_Notifications:_** Email and push notifications for users.
+- **_Invoice:_** Shows an invoice and option to download it for every successful purchase.
+- **_User Profile:_** Displays user information and option to update for signed-in users.
+- **_User Order History:_** Shows order history of each user, order status etc.
+- **_Review and Rating:_** Product review and rating to help users choose.
+- **_Product Details Page:_** Everything about the product in details.
+- **_Admin Dashboard:_** To help admins manage and maintain the website.
+
+<p align="right"><a href="#readme-top">Back to Top :arrow_heading_up:</a></p>
