@@ -8,7 +8,7 @@
 
   <h1 align="center">E-Bazr</h1>
   
-  E-Bazr is an full-stack e-commerce web application based on  `Ract.js`.
+  E-Bazr is an e-commerce web app built with React.js and hosted on Netlify. This website imitates a real-world market where visitors can view products under different categories, add products to cart, and confirm order by paying with a credit card. Both signed-in and guest users can make order with this platform.
   <br />
   
   ### <a href="https://e-bazr.netlify.app/">View Live</a> :large_blue_diamond: <a href="https://github.com/tajmin/e-bazar/issues">Report Bug</a>
@@ -50,7 +50,9 @@
 
 ## 1. About
 
-![E-Bazr Screen Shot](https://i.ibb.co/mGVphpL/hero.jpg)
+![E-Bazr Screen Shot](https://i.ibb.co/QfdC8pR/hero.jpg)
+
+E-Bazr is an e-commerce web app built with `React.js` and hosted on `Netlify`. This website imitates a real-world market where visitors can view products under different categories, add products to cart, and confirm order by paying with a credit card. Both signed-in and guest users can make order with this platform. For authentication, `Firebase` is used while `Firestore` handles the database part of this project.
 
 <p align="right"><a href="#readme-top">Back to Top :arrow_heading_up:</a></p>
 
@@ -79,7 +81,7 @@ Getting started with e-bazr is fairly easy and simple. Follow the instructions a
 ### 3.1 Prerequisites
 
 - You need to have `Node.js` installed on your computer beforehand to run this project. Follow [this link](https://nodejs.org/en/download/) to install `Node.js` on your computer.
-- To test `Stripe` payment and simulate the credit-card transaction, you need to run the project on `Netlify CLI`. To install `Netlify CLI`, [click here](https://docs.netlify.com/cli/get-started/). Also, you need to have your own `stripe` secret keys that you need to store on a `.env` file locally.
+- To test `Stripe` payment and simulate the credit-card transaction, you need to run the project on `Netlify CLI` instead of `command prompt` . To install `Netlify CLI`, [click here](https://docs.netlify.com/cli/get-started/). Also, you need to have your own `stripe` secret keys that you need to store on a `.env` file locally.
 
 ### 3.2 Installation
 
