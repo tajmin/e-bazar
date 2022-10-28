@@ -2,20 +2,24 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const NavContainer = styled.div`
+  margin: 2rem 0;
   padding: 0 5rem;
-  height: 10vh;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
 `;
 
+export const Nav = styled.div`
+  height: 5.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 2px 10px 4px #cfcfcf;
+`;
 export const LogoContainer = styled(Link)`
   display: flex;
   align-items: center;
-  padding: 10px;
-  width: 175px;
+  padding: 1rem 0;
   img {
-    width: 100%;
+    width: 100px;
   }
 `;
 
@@ -28,6 +32,14 @@ export const MenuContainer = styled.div`
 `;
 
 export const MenuLink = styled(Link)`
-  padding: 10px 15px;
+  padding: 0 15px;
+  font-size: 18px;
+  transition: 0.3s;
   cursor: pointer;
+
+  &:hover {
+    background-color: #4dba3c;
+    padding: 33px 15px;
+    color: #fff;
+  }
 `;

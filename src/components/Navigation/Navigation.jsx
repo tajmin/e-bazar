@@ -10,6 +10,7 @@ import {
   LogoContainer,
   MenuContainer,
   MenuLink,
+  Nav,
   NavContainer,
 } from "./Navigation.styles.jsx";
 
@@ -19,34 +20,36 @@ const Navigation = () => {
   return (
     <Fragment>
       <NavContainer>
-        <LogoContainer to="/">
-          <img src={logo} alt="e-bazr" />
-        </LogoContainer>
-        <MenuContainer>
-          <MenuLink to="/" className="menu-item">
-            Home
-          </MenuLink>
-          <MenuLink to="/shop" className="menu-item">
-            Shop
-          </MenuLink>
-
-          {currentUser ? (
-            <MenuLink as="span" onClick={userSignOut}>
-              Sign Out
+        <Nav>
+          <LogoContainer to="/">
+            <img src={logo} alt="e-bazr" />
+          </LogoContainer>
+          <MenuContainer>
+            <MenuLink to="/" className="menu-item">
+              Home
             </MenuLink>
-          ) : (
-            <>
-              <MenuLink to="/sign-in" className="menu-item">
-                Sign-In
+            <MenuLink to="/shop" className="menu-item">
+              Shop
+            </MenuLink>
+
+            {currentUser ? (
+              <MenuLink as="span" onClick={userSignOut}>
+                Sign Out
               </MenuLink>
-              <MenuLink to="/sign-up" className="menu-item">
-                Sign Up
-              </MenuLink>
-            </>
-          )}
-          <CartIcon></CartIcon>
-        </MenuContainer>
-        {isCartDropdownOpen && <CartDropdown></CartDropdown>}
+            ) : (
+              <>
+                <MenuLink to="/sign-in" className="menu-item">
+                  Sign-In
+                </MenuLink>
+                <MenuLink to="/sign-up" className="menu-item">
+                  Sign Up
+                </MenuLink>
+              </>
+            )}
+            <CartIcon></CartIcon>
+          </MenuContainer>
+          {isCartDropdownOpen && <CartDropdown></CartDropdown>}
+        </Nav>
       </NavContainer>
       <Outlet></Outlet>
     </Fragment>

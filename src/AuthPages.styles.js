@@ -25,12 +25,7 @@ export const FormContainer = styled.div`
 `;
 
 export const GlassMorphWrapper = styled.div`
-  background-image: linear-gradient(
-      to top,
-      rgba(77, 186, 60, 0.7),
-      rgba(255, 255, 255, 0.32)
-    ),
-    url(${signInImg});
+  background-image: url(${signInImg});
   width: 40%;
   height: 100%;
   background-position: left top;
@@ -48,16 +43,21 @@ export const GlassMorphContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.35);
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.3)
+  );
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.29);
 
   h2 {
     font-size: 40px;
     color: #4dba3c;
+    letter-spacing: 2px;
   }
 
   span {

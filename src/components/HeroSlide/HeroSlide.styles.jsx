@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const SlideContainer = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 85vh;
+  margin-bottom: 5rem;
 
   .full-w-h {
     width: 100%;
