@@ -1,3 +1,5 @@
+@use "../../variables" as var;
+
 .button-container {
   min-width: 170px;
   width: auto;
@@ -6,12 +8,12 @@
   line-height: 50px;
   padding: 0 35px 0 35px;
   font-size: 16px;
-  background-color: #4dba3c;
+  background-color: var.$base-color;
   color: white;
   text-transform: uppercase;
   font-family: "Dosis", sans-serif;
   font-weight: bolder;
-  border: 1px solid #4dba3c;
+  border: 1px solid var.$base-color;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -20,7 +22,7 @@
 
   &:hover {
     background-color: white;
-    color: #4dba3c;
+    color: var.$base-color;
   }
 
   &.google {
@@ -38,10 +40,10 @@
 
   &.inverted {
     background-color: white;
-    color: #4dba3c;
+    color: var.$base-color;
 
     &:hover {
-      background-color: #4dba3c;
+      background-color: var.$base-color;
       color: white;
       border: none;
     }

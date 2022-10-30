@@ -1,5 +1,6 @@
 import React from "react";
 import SignInForm from "../../components/sign-in-form/SignInForm";
+import logo from "../../images/logo.png";
 import "./SignIn.styles.scss";
 
 const SignIn = () => {
@@ -13,6 +14,7 @@ const SignIn = () => {
         </div>
         <div className="img-glass-container">
           <div className="glass">
+            <img src={logo} alt="e-bazr" />
             <h2>Already have an account?</h2>
             <span>Sign in now and get the best shopping experience!</span>
           </div>

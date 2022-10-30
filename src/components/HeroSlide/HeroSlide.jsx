@@ -12,7 +12,7 @@ import "./HeroSlide.styles.scss";
 
 const HeroSlide = () => {
   return (
-    <div className="slide-container">
+    <div className="slide-container side-padding">
       <Swiper
         className="full-w-h"
         modules={[Mousewheel, Pagination]}

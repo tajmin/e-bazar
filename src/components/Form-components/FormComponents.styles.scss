@@ -1,6 +1,8 @@
+@use "../../variables" as var;
+
 $sub-color: grey;
 $main-color: black;
-$focus-color: #4dba3c;
+$focus-color: var.$base-color;
 
 @mixin shrinkLabel {
   top: -14px;

@@ -1,17 +1,37 @@
+@use "../../variables" as var;
+
 .categories-container {
   width: 100%;
-  padding: 59px 0;
+  padding: 5rem 0;
+
+  .categories-section-title {
+    color: var.$secondary-color;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 0;
+    padding-bottom: 12px;
+    letter-spacing: -1px;
+    word-spacing: 15px;
+  }
+
+  .categories-title-border {
+    width: 12%;
+    height: 5px;
+    margin: 0 auto 5rem;
+    background-color: var.$base-color;
+  }
 }
 
 .two-items-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 20px;
+  column-gap: 30px;
 }
 
 .three-items-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 20px;
+  column-gap: 25px;
   margin: 30px 0;
 }
