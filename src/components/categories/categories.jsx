@@ -50,8 +50,9 @@ const categories = [
 const Categories = () => {
   return (
     <div className="categories-container side-padding">
-      <h2 className="categories-section-title">explore categories</h2>
-      <div className="categories-title-border"></div>
+      <div className="section-header">
+        <h2 className="categories-section-title">explore categories</h2>
+      </div>
       <div className="two-items-grid">
         {categories
           .map((category) => (

@@ -55,7 +55,7 @@ const PaymentForm = () => {
 
   return (
     <div className="payment-form-container glass-morph">
-      <h2>Enter Card Details</h2>
+      <h4>Enter Card Details</h4>
       <form className="form-wrapper" onSubmit={paymentHandler}>
         <CardElement></CardElement>
         <Button buttonType="payment" isLoading={isPaymentProcessing}>
