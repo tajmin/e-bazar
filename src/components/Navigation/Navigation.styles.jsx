@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 export const NavContainer = styled.div`
   margin: 2rem 0;
-  padding: 0 5rem;
+  padding: 0 7rem;
 `;
 
 export const Nav = styled.div`
-  height: 5.5rem;
+  height: 6rem;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -17,9 +17,8 @@ export const Nav = styled.div`
 export const LogoContainer = styled(Link)`
   display: flex;
   align-items: center;
-  padding: 1rem 0;
   img {
-    width: 100px;
+    width: 120px;
   }
 `;
 
@@ -33,13 +32,13 @@ export const MenuContainer = styled.div`
 
 export const MenuLink = styled(Link)`
   padding: 0 15px;
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.3s;
   cursor: pointer;
 
   &:hover {
     background-color: #4dba3c;
-    padding: 33px 15px;
+    padding: 35px 15px;
     color: #fff;
   }
 `;

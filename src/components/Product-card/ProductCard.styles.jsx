@@ -48,6 +48,7 @@ export const ProductInfoContainer = styled.div`
 
   h4 {
     margin: 2px 0 5px 0;
+    color: #474252;
   }
   .price {
     color: #4dba3c;

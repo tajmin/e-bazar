@@ -52,7 +52,7 @@ const PaymentForm = () => {
 
   return (
     <PaymentFormContainer className="glass-morph">
-      <h2>Enter Card Details</h2>
+      <h4>Enter Card Details</h4>
       <FormWrap onSubmit={paymentHandler}>
         <CardElement></CardElement>
         <Button

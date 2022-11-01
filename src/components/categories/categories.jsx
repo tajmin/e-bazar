@@ -2,6 +2,7 @@ import React from "react";
 import CategoryItem from "../category-item/category-item";
 import {
   CategoriesContainer,
+  SectionTitleContainer,
   ThreeItemsGrid,
   TwoItemsGrid,
 } from "./categories.styles";
@@ -54,6 +55,9 @@ const categories = [
 const Categories = () => {
   return (
     <CategoriesContainer>
+      <SectionTitleContainer>
+        <h2>explore categories</h2>
+      </SectionTitleContainer>
       <TwoItemsGrid>
         {categories
           .map((category) => (

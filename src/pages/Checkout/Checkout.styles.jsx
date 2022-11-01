@@ -5,10 +5,10 @@ export const CheckoutContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to top left, #d1e6ed, #4dba3cbb);
+  background: linear-gradient(to top left, #69d60085, #4dba3cbb);
   padding: 5rem;
   margin: 0;
-  min-height: 90vh;
+  min-height: 85vh;
 `;
 
 export const OrderSummaryTextContainer = styled.div`
@@ -36,7 +36,7 @@ export const OrderSummaryTextContainer = styled.div`
 export const HighlightedSpan = styled.span`
   padding: 0 0.25rem;
   font-weight: 700;
-  color: darkgoldenrod;
+  color: #474252;
 `;
 
 export const Separator = styled.div`
@@ -57,5 +57,5 @@ export const TotalPriceSpan = styled.span`
   margin-top: 30px;
   margin-left: auto;
   font-size: 36px;
-  color: #4dba3cbb;
+  color: #474252;
 `;

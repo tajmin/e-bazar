@@ -11,7 +11,7 @@ export const CategoryTitle = styled.h2`
 
 export const TitleBorder = styled.div`
   background-color: #4dba3c;
-  width: 100px;
+  width: 150px;
   height: 5px;
   margin: 0 auto 80px;
 `;

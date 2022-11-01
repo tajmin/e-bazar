@@ -8,9 +8,12 @@ export const PaymentFormContainer = styled.div`
   justify-content: center;
   padding: 2.5rem;
 
-  h2 {
-    color: darkslategray;
+  h4 {
     margin: 0 0 2.5rem;
+    font-size: 24px;
+    font-weight: normal;
+    color: #474252;
+    word-spacing: 5px;
   }
 
   button {
