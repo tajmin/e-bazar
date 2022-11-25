@@ -1,3 +1,5 @@
+@use "./variables" as var;
+
 .container {
   display: flex;
   width: 100%;
@@ -6,10 +8,10 @@
   .img-glass-container {
     background-image: linear-gradient(
         to top right,
-        rgba(77, 186, 60, 0.252),
+        rgba(77, 186, 60, 0.5),
         rgba(255, 255, 255, 0.52)
       ),
-      url("../../images/sign-up-in.jpg");
+      url("./images/sign-up-in.jpg");
     width: 40%;
     height: 100%;
     background-position: left top;
@@ -34,8 +36,9 @@
       border: 1px solid rgba(255, 255, 255, 0.29);
 
       h2 {
+        margin: 1rem 0 0.5rem;
         font-size: 40px;
-        color: #4dba3c;
+        color: var.$secondary-color;
       }
       span {
         font-size: 20px;
@@ -56,7 +59,7 @@
       width: 500px;
       span {
         padding-bottom: 5px;
-        border-bottom: 3px solid #4dba3c;
+        border-bottom: 3px solid var.$base-color;
       }
     }
   }

@@ -14,34 +14,36 @@ const Navigation = () => {
   return (
     <Fragment>
       <nav>
-        <Link to="/" className="logo">
-          <img src={logo} alt="e-bazr" />
-        </Link>
-        <div className="menu-container">
-          <Link to="/" className="menu-item">
-            Home
+        <div className="sub-container">
+          <Link to="/" className="logo">
+            <img src={logo} alt="e-bazr" />
           </Link>
-          <Link to="/shop" className="menu-item">
-            Shop
-          </Link>
+          <div className="menu-container">
+            <Link to="/" className="menu-item">
+              Home
+            </Link>
+            <Link to="/shop" className="menu-item">
+              Shop
+            </Link>
 
-          {currentUser ? (
-            <span className="menu-item" onClick={userSignOut}>
-              Sign Out
-            </span>
-          ) : (
-            <>
-              <Link to="/sign-in" className="menu-item">
-                Sign-In
-              </Link>
-              <Link to="/sign-up" className="menu-item">
-                Sign Up
-              </Link>
-            </>
-          )}
-          <CartIcon></CartIcon>
+            {currentUser ? (
+              <span className="menu-item" onClick={userSignOut}>
+                Sign Out
+              </span>
+            ) : (
+              <>
+                <Link to="/sign-in" className="menu-item">
+                  Sign-In
+                </Link>
+                <Link to="/sign-up" className="menu-item">
+                  Sign Up
+                </Link>
+              </>
+            )}
+            <CartIcon></CartIcon>
+          </div>
+          {isCartDropdownOpen && <CartDropdown></CartDropdown>}
         </div>
-        {isCartDropdownOpen && <CartDropdown></CartDropdown>}
       </nav>
       <Outlet></Outlet>
     </Fragment>
