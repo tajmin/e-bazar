@@ -1,3 +1,5 @@
+@use "../../variables" as var;
+
 .cart-dropdown-container {
   position: absolute;
   width: 300px;
@@ -5,7 +7,7 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: 1px solid #4dba3c;
+  border: 1px solid var.$base-color;
   background-color: white;
   top: 105px;
   right: 128px;

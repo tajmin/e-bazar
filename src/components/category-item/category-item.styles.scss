@@ -1,3 +1,5 @@
+@use "../../variables" as var;
+
 .category-container {
   min-width: 30%;
   height: 250px;
@@ -33,7 +35,7 @@
   .category-body-container {
     height: 100px;
     width: 230px;
-    border: 1px solid #4dba3c;
+    border: 1px solid var.$base-color;
     border-radius: 5px;
     background-color: white;
     opacity: 0.85;
@@ -44,7 +46,7 @@
     h2 {
       font-weight: bold;
       font-size: 26px;
-      color: #4dba3c;
+      color: var.$base-color;
       margin-bottom: 0;
       text-transform: uppercase;
       letter-spacing: 2px;
