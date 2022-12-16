@@ -45,4 +45,15 @@
       border: none;
     }
   }
+
+  &.payment {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
 }

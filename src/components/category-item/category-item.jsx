@@ -9,7 +9,7 @@ const CategoryItem = ({ category }) => {
   const handleNavigation = () => navigate(route);
 
   return (
-    <div className="category-container" onClick={handleNavigation}>
+    <div className="category-container box-shadow" onClick={handleNavigation}>
       <div
         className="background-image"
         style={{

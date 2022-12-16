@@ -1,6 +1,7 @@
 import React from "react";
 import SignUpForm from "../../components/sign-up-form/SignUpForm";
-import "./SignUp.styles.scss";
+import logo from "../../images/logo.png";
+import "../../AuthPages.styles.scss";
 
 const SignUp = () => {
   return (
@@ -8,6 +9,7 @@ const SignUp = () => {
       <div className="container">
         <div className="img-glass-container">
           <div className="glass">
+            <img src={logo} alt="e-bazr" />
             <h2>Don't have an account?</h2>
             <span>Signing up with E-bazr is super easy!</span>
           </div>

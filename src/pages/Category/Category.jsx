@@ -15,7 +15,7 @@ const Category = () => {
   }, [categoryTitle, categories]);
 
   return (
-    <div className="category">
+    <div className="category side-padding">
       <h2>{categoryTitle}</h2>
       <div className="title-border"></div>
       <div className="product-container">

@@ -24,7 +24,7 @@ const CheckoutItem = ({ cartItem }) => {
     dispatch(decreaseProductQuantityFromCart(cartProducts, cartItem));
 
   return (
-    <div className="checkout-item-container">
+    <div className="checkout-item-container box-shadow">
       <div className="image-container">
         <img src={imageUrl} alt={`${name}`} />
       </div>

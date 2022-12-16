@@ -1,3 +1,8 @@
+@use "../../variables" as var;
+
 .categories-preview-wrapper {
   padding: 5rem 0;
+  background-color: var.$color-green;
+  border-top: 3px solid var.$color-black;
+  border-bottom: 3px solid var.$color-black;
 }

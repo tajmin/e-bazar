@@ -14,7 +14,7 @@ const Navigation = () => {
   const isCartDropdownOpen = useSelector(selectIsCartDropdownOpen);
   return (
     <Fragment>
-      <nav>
+      <nav className="side-padding">
         <Link to="/" className="logo">
           <img src={logo} alt="e-bazr" />
         </Link>

@@ -1,3 +1,5 @@
+@use "../../variables" as var;
+
 .cart-dropdown-container {
   position: absolute;
   width: 300px;
@@ -5,10 +7,10 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: 1px solid #4dba3c;
+  border: 3px solid var.$color-black;
   background-color: white;
-  top: 90px;
-  right: 80px;
+  top: 97px;
+  right: 0px;
   z-index: 5;
 
   .empty-message {

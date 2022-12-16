@@ -8,7 +8,7 @@ const CategoriesPreview = () => {
   const categories = useSelector(selectCategories);
 
   return (
-    <div className="categories-preview-wrapper">
+    <div className="categories-preview-wrapper side-padding">
       {Object.keys(categories).map((title) => {
         const products = categories[title];
         return (

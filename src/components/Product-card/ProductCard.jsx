@@ -15,7 +15,7 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="product-card">
+    <div className="product-card box-shadow">
       <img src={imageUrl} alt={`${name}`} />
       <div className="footer">
         <h4 className="name">{name}</h4>

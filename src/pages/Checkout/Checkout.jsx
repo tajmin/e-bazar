@@ -24,7 +24,7 @@ const Checkout = () => {
         </h4>
         <div className="separator"></div>
       </div>
-      <div className="order-container">
+      <div className="order-container box-shadow glass-morph">
         {cartProducts.map((item) => (
           <CheckoutItem key={item.id} cartItem={item}></CheckoutItem>
         ))}
